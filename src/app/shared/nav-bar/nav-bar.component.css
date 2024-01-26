@@ -1,0 +1,22 @@
+/* ---------- Nav Container ----------*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ---------- Header ----------*/
+h1 {
+  font-size: 2rem;
+}
+
+/* ---------- Navigation Links ----------*/

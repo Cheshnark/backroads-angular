@@ -1,1 +1,13 @@
-<p>nav-bar works!</p>
+<nav>
+  <h1>Backroads</h1>
+  <ul>
+    <li><a [routerLink]="['/map']">Map</a></li>
+    <li><a [routerLink]="['/honor-code']">Honor Code</a></li>
+    <li><a [routerLink]="['/faq']">FAQ</a></li>
+    @if (user) {
+      <li><a [routerLink]="['/profile']">Profile</a></li>
+    } @else {
+      <li><a [routerLink]="['/login']">Login</a></li>
+    }
+  </ul>
+</nav>
