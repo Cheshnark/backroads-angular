@@ -21,8 +21,13 @@ Fonts:
 
 body {
   background-color: #161320;
+  font-family: 'Rubik', sans-serif;
 }
 
 h1, p, li {
   color: #F9F4F6;
+}
+
+h1 {
+  font-family: 'Berkshire Swash', serif;
 }
