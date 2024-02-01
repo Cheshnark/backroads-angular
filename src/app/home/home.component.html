@@ -1,0 +1,14 @@
+<main>
+  <section class='front_container flex flex--col justify-center items-end'>
+      <div class="cards flex flex-col sm:flex-row justify-center gap-4">
+        @for (card of cardsData; track $index) {
+          <app-card [card]='card' />
+        }
+      </div>
+  </section>
+  <section class='shelter_container flex flex-col justify-center items-center'>
+    <h2>Shelters</h2>
+    <app-shelter-carousel />
+  </section>
+
+</main>

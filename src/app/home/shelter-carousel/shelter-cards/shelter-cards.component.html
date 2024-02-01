@@ -1,0 +1,15 @@
+<div class='shelter-container'>
+  <h3>{{shelter?.title}}</h3>
+  <p>{{shelter?.body}}</p>
+  <div class='services-container flex flex-wrap gap-2'>
+    @if (shelter?.services?.['water']) { <p>Watha</p> }
+    @if (shelter?.services?.['electricity']) { <p>Laito</p> }
+    @if (shelter?.services?.['pet']) { <p>Doggo</p> }
+    @if (shelter?.services?.['bathroom']) { <p>BRoom</p> }
+    @if (shelter?.services?.['shower']) { <p>Showaah</p> }
+    @if (shelter?.services?.['internet']) { <p>Waifai</p> }
+    @if (shelter?.services?.['washClothes']) { <p>Guas maschine</p> }
+    @if (shelter?.services?.['pool']) { <p>suim</p> }
+    @if (shelter?.services?.['bar']) { <p>Drink biatch</p> }
+  </div>
+</div>

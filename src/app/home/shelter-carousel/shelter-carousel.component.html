@@ -1,0 +1,11 @@
+<div>
+  <div class='slider-wrap'>
+    <div class='slider-main flex items-center gap-8'>
+      <button class='left' (click)="onClickLeft()"><app-chevron-left /></button>
+      @for (shelter of shelters; track $index + shelter.title) {
+        <app-shelter-cards [shelter]='shelter'/>
+      }
+      <button class='right' (click)="onClickRight()"><app-chevron-right /></button>
+    </div>
+  </div>
+</div>
