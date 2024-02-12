@@ -12,10 +12,12 @@ import { DrawerComponent } from './drawer/drawer.component';
 })
 export class NavBarComponent {
   user = 'Adam';
-
   showMenu = false;
 
   onClickMenu() {
-    this.showMenu = !this.showMenu
+    const body = document.querySelector('body')
+    body?.classList.toggle('hide-scroll')
+    
+    this.showMenu = !this.showMenu;
   };
 }

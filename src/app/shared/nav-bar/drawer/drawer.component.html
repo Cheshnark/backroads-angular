@@ -1,11 +1,16 @@
-<div class="drawer-background">
-  <div class="drawer">
+<div class='drawer-background'>
+  <div class='drawer-container'>
+    <app-x-mark class='x-icon' (click)='onClickX()' />
     <ul>
-      <li>Jambito</li>
-      <li>Jambito</li>
-      <li>Jambito</li>
-      <li>Jambito</li>
-      <li>Jambito</li>
+      <li (click)='onClickX()'><a [routerLink]="['/']">Home</a></li>
+      <li (click)='onClickX()'><a [routerLink]="['/map']">Map</a></li>
+      <li (click)='onClickX()'><a [routerLink]="['/honor-code']">Honor Code</a></li>
+      <li (click)='onClickX()'><a [routerLink]="['/faq']">FAQ</a></li>
+      @if (user) {
+        <li (click)='onClickX()'><a [routerLink]="['/profile']">Profile</a></li>
+      } @else {
+        <li (click)='onClickX()'><a [routerLink]="['/login']">Login</a></li>
+      }
     </ul>
   </div>
 </div>

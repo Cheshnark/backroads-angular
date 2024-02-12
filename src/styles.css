@@ -27,6 +27,11 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+/* ---------- Disable vertical scroll ----------- */
+.hide-scroll {
+  overflow-y: hidden;
+}
+
 h1,h2,p,li {
   color: #F9F4F6;
 }

@@ -12,6 +12,10 @@
     }
   </ul>
   @if (showMenu) {
-    <app-drawer />
+    <app-drawer
+      [showMenu]='showMenu'
+      (showMenuChange)="showMenu = $event" [showMenu]="showMenu"
+      [user]='user'
+    />
   }
 </nav>
