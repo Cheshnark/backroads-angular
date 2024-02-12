@@ -1,5 +1,6 @@
 <nav>
   <h1><a [routerLink]="['']">Backroads</a></h1>
+  <app-menu class='menu-icon' (click)='onClickMenu()' />
   <ul>
     <li><a [routerLink]="['/map']">Map</a></li>
     <li><a [routerLink]="['/honor-code']">Honor Code</a></li>
@@ -10,4 +11,7 @@
       <li><a [routerLink]="['/login']">Login</a></li>
     }
   </ul>
+  @if (showMenu) {
+    <app-drawer />
+  }
 </nav>

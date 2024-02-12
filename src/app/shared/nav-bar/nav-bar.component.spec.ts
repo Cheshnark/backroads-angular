@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavBarComponent } from './nav-bar.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('NavBarComponent', () => {
   let component: NavBarComponent;
@@ -8,7 +9,7 @@ describe('NavBarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavBarComponent]
+      imports: [NavBarComponent, RouterTestingModule]
     })
     .compileComponents();
     
@@ -19,5 +20,12 @@ describe('NavBarComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(NavBarComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Backroads');
   });
 });

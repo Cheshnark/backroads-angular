@@ -90,13 +90,15 @@ export class ShelterCarouselComponent {
     }
   ]
 
+  slider = document.querySelector('.slider-wrap')
+
   onClickLeft() {
-    const slider = document.querySelector('.slider-main')
-    console.log(slider)
-    this.slider.scrollLeft += 30
-  }
+    const slider = document.querySelector('.slider-wrap');
+    slider!.scrollLeft -= 200;
+  };
 
   onClickRight() {
-    console.log('Clicky Licky')
-  }
+    const slider = document.querySelector('.slider-wrap');
+    slider!.scrollLeft += 200;
+  };
 }

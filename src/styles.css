@@ -42,3 +42,17 @@ h2 {
 h3 {
   font-size: 1.4rem;
 }
+
+/* ---------- Button ----------- */
+button {
+  width: 40%;
+  max-width: 200px;
+  padding: 0.5rem;
+
+  background-color: #161320;
+  color: #F9F4F6;
+}
+
+button:hover {
+  background-color: #3f3852;
+}

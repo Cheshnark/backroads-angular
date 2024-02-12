@@ -9,14 +9,30 @@ nav {
   left: 0;
   right: 0;
 
-  padding: 2rem 3rem;
+  padding: 2rem 1.5rem;
+
+  background-color: #161320;
+
+  .menu-icon {
+    color: #F9F4F6;
+  }
 }
 
 nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  display: none;
+}
+
+@media (width >= 640px) {
+  .menu-icon {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 /* ---------- Header ----------*/

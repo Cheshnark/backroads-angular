@@ -1,9 +1,10 @@
 /* ---------- Front Section ----------*/
 .front_container {
   width: 100%;
-  min-height: 650px;
-  margin: 0 auto;
+  min-height: 700px;
+  margin: 112px auto 0 auto;
   padding-bottom: 1.5rem;
+
 
   background-image: url('/assets/images/home01.webp');
   background-repeat: no-repeat;
@@ -18,5 +19,35 @@
 
   h2 {
     margin-bottom: 2.5rem;
+  }
+}
+
+/* ---------- Honor Section ----------*/
+.honor_container {
+  width: 100%;
+  min-height: 650px;
+  margin: 5rem auto 0 auto;
+  padding-bottom: 1.5rem;
+
+  background-image: url('/assets/images/home02.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h2,
+  p {
+    color: #161320;
+  }
+}
+
+.honor-text {
+  position: relative;
+  bottom: 8rem;
+
+  padding: 1rem;
+
+  background-color: #F9F4F6;
+
+  button {
+    margin: 1.5rem auto 1rem auto;
   }
 }

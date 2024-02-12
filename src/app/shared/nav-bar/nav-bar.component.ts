@@ -1,13 +1,21 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { MenuComponent } from '../../../assets/icons/menu/menu.component';
+import { DrawerComponent } from './drawer/drawer.component';
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, DrawerComponent, MenuComponent],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.css'
 })
 export class NavBarComponent {
-  user = 'Adam'
+  user = 'Adam';
+
+  showMenu = false;
+
+  onClickMenu() {
+    this.showMenu = !this.showMenu
+  };
 }

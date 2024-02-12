@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShelterCarouselComponent should match snapshot 1`] = `
+<div
+  id="root1"
+>
+  <div>
+    <div
+      class="slider-wrap"
+    >
+      <div
+        class="slider-main flex items-center gap-8"
+      >
+        <button
+          class="left"
+        >
+          <app-chevron-left>
+            <svg
+              class="lucide lucide-chevron-left"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m15 18-6-6 6-6"
+              />
+            </svg>
+          </app-chevron-left>
+        </button>
+        <app-shelter-cards>
+          <div
+            class="shelter-container"
+          >
+            <h3>
+              Cangas de Onís
+            </h3>
+            <p>
+              Ríos, vales, carreteras con mazo de curvas, que no curwas. No te preocupes por las cascadas, desprendimientos, hay curvas, velocidad, emoción, G-U-A-U, se te va la faking olla primo.
+            </p>
+            <div
+              class="services-container flex flex-wrap gap-2"
+            >
+              <p>
+                Watha
+              </p>
+              
+              
+              
+              <p>
+                BRoom
+              </p>
+              
+              <p>
+                Showaah
+              </p>
+              
+              
+              <p>
+                Guas maschine
+              </p>
+              
+              
+              
+            </div>
+          </div>
+        </app-shelter-cards>
+        <app-shelter-cards>
+          <div
+            class="shelter-container"
+          >
+            <h3>
+              Cangas de Onís
+            </h3>
+            <p>
+              Ríos, vales, carreteras con mazo de curvas, que no curwas. No te preocupes por las cascadas, desprendimientos, hay curvas, velocidad, emoción, G-U-A-U, se te va la faking olla primo.
+            </p>
+            <div
+              class="services-container flex flex-wrap gap-2"
+            >
+              <p>
+                Watha
+              </p>
+              
+              
+              
+              <p>
+                BRoom
+              </p>
+              
+              <p>
+                Showaah
+              </p>
+              
+              
+              <p>
+                Guas maschine
+              </p>
+              
+              
+              
+            </div>
+          </div>
+        </app-shelter-cards>
+        <app-shelter-cards>
+          <div
+            class="shelter-container"
+          >
+            <h3>
+              Cangas de Onís
+            </h3>
+            <p>
+              Ríos, vales, carreteras con mazo de curvas, que no curwas. No te preocupes por las cascadas, desprendimientos, hay curvas, velocidad, emoción, G-U-A-U, se te va la faking olla primo.
+            </p>
+            <div
+              class="services-container flex flex-wrap gap-2"
+            >
+              <p>
+                Watha
+              </p>
+              
+              
+              
+              <p>
+                BRoom
+              </p>
+              
+              <p>
+                Showaah
+              </p>
+              
+              
+              <p>
+                Guas maschine
+              </p>
+              
+              
+              
+            </div>
+          </div>
+        </app-shelter-cards>
+        <app-shelter-cards>
+          <div
+            class="shelter-container"
+          >
+            <h3>
+              Cangas de Onís
+            </h3>
+            <p>
+              Ríos, vales, carreteras con mazo de curvas, que no curwas. No te preocupes por las cascadas, desprendimientos, hay curvas, velocidad, emoción, G-U-A-U, se te va la faking olla primo.
+            </p>
+            <div
+              class="services-container flex flex-wrap gap-2"
+            >
+              <p>
+                Watha
+              </p>
+              
+              
+              
+              <p>
+                BRoom
+              </p>
+              
+              <p>
+                Showaah
+              </p>
+              
+              
+              <p>
+                Guas maschine
+              </p>
+              
+              
+              
+            </div>
+          </div>
+        </app-shelter-cards>
+        <app-shelter-cards>
+          <div
+            class="shelter-container"
+          >
+            <h3>
+              Cangas de Onís
+            </h3>
+            <p>
+              Ríos, vales, carreteras con mazo de curvas, que no curwas. No te preocupes por las cascadas, desprendimientos, hay curvas, velocidad, emoción, G-U-A-U, se te va la faking olla primo.
+            </p>
+            <div
+              class="services-container flex flex-wrap gap-2"
+            >
+              <p>
+                Watha
+              </p>
+              
+              
+              
+              <p>
+                BRoom
+              </p>
+              
+              <p>
+                Showaah
+              </p>
+              
+              
+              <p>
+                Guas maschine
+              </p>
+              
+              
+              
+            </div>
+          </div>
+        </app-shelter-cards>
+        
+        <button
+          class="right"
+        >
+          <app-chevron-right>
+            <svg
+              class="lucide lucide-chevron-right"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m9 18 6-6-6-6"
+              />
+            </svg>
+          </app-chevron-right>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
