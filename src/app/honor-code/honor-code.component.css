@@ -54,6 +54,11 @@ p {
 }
 
 .honor-cards-container {
-  width: 95%;
   margin-bottom: 5rem;
+}
+
+@media (width >= 768px) {
+  .honor-cards-container {
+    width: 95%;
+  }
 }
