@@ -8,7 +8,9 @@ footer {
 }
 
 .navigation li:active,
-.social-media li:active {
+.social-media li:active,
+.navigation li:hover,
+.social-media li:hover {
   color: #D14836;
 }
 

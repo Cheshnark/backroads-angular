@@ -1,9 +1,10 @@
 <footer>
-  <div class="footer-container flex flex-col sm:flex-row gap-8 sm:gap-6 md:gap-12 justify-center items-start">
+  <div class="footer-container flex flex-col sm:flex-row gap-8 sm:gap-6 md:gap-12 justify-center lg:justify-between items-start">
     <h2>Backroads</h2>
     <div class='navigation'>
       <h3>Navigation</h3>
       <ul>
+        <li><a [routerLink]="['/map']">Home</a></li>
         <li><a [routerLink]="['/map']">Map</a></li>
         <li><a [routerLink]="['/honor-code']">Honor Code</a></li>
         <li><a [routerLink]="['/faq']">FAQ</a></li>
@@ -35,10 +36,10 @@
     <div class="social-media flex flex-col justify-start">
       <h3>Social Media</h3>
       <ul class="flex gap-4">
-        <li><a href='https://www.instagram.com/backroadsculture/' target='_blank'><app-facebook class="contact-icon" /></a></li>
-        <li><a href='https://www.instagram.com/backroadsculture/' target='_blank'><app-twitter class="contact-icon" /></a></li>
-        <li><a href='https://www.instagram.com/backroadsculture/' target='_blank'><app-linkedin class="contact-icon" /></a></li>
-        <li><a href='https://www.instagram.com/backroadsculture/' target='_blank'><app-instagram class="contact-icon" /></a></li>
+        <li><a href='https://www.instagram.com/backroadsculture/' target='_blank'><app-facebook /></a></li>
+        <li><a href='https://www.instagram.com/backroadsculture/' target='_blank'><app-twitter /></a></li>
+        <li><a href='https://www.instagram.com/backroadsculture/' target='_blank'><app-linkedin /></a></li>
+        <li><a href='https://www.instagram.com/backroadsculture/' target='_blank'><app-instagram /></a></li>
       </ul>
     </div>
   </div>

@@ -1,3 +1,9 @@
 .template-container {
   min-height: 100vh;
 }
+
+ @media (height >= 2500px) {
+  .template-container {
+    min-height: 100%;
+  }
+ }
