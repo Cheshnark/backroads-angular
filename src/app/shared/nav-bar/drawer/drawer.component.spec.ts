@@ -27,7 +27,6 @@ describe('DrawerComponent', () => {
     fixture.detectChanges();
     const xIcon = fixture.debugElement.query(By.css('.x-icon'));
     const body = document.querySelector('body')
-    // Add 'hide-scroll' class to body
     body?.classList.add('hide-scroll')
     // Spy on emitter 
     jest.spyOn(component.showMenuChange, 'emit');

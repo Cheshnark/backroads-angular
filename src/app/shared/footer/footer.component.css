@@ -1,7 +1,28 @@
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   padding: 2rem;
+
+  h3 {
+    color: #F9F4F6;
+    font-family: 'Rubik', sans-serif;
+  }
+}
+
+.navigation li:active,
+.social-media li:active {
+  color: #D14836;
+}
+
+footer>div>div {
+  width: 80%;
+  text-align: left;
+}
+
+/* ---------- Icons ----------- */
+.contact-icon {
+  transform: scale(0.9);
+}
+
+/* ---------- Copyright ----------- */
+.copyright-container {
+  margin-top: 3rem;
 }

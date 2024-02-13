@@ -1,3 +1,48 @@
 <footer>
-  <p>Backroads ©{{ year }} </p>
+  <div class="flex flex-col sm:flex-row gap-4 justify-center items-center text-center">
+    <h2>Backroads</h2>
+    <div class='navigation'>
+      <h3>Navigation</h3>
+      <ul>
+        <li><a [routerLink]="['/map']">Map</a></li>
+        <li><a [routerLink]="['/honor-code']">Honor Code</a></li>
+        <li><a [routerLink]="['/faq']">FAQ</a></li>
+        @if (user) {
+        <li><a [routerLink]="['/profile']">Profile</a></li>
+        } @else {
+        <li><a [routerLink]="['/login']">Login</a></li>
+        }
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul class="flex flex-col gap-4">
+        <li class="flex items-center gap-2">
+          <app-phone class="contact-icon" />
+          555-589-258
+        </li>
+        <li class="flex items-center gap-2">
+          <app-mail class="contact-icon" />
+          backroads{{ "@" }}br-app.com
+        </li>
+        <li class="flex items-start gap-2">
+          <app-map-pin class="contact-icon" />
+          1234 Sample Street <br />
+          Austin Texas 78704
+        </li>
+      </ul>
+    </div>
+    <div class="social-media flex flex-col justify-start">
+      <h3>Social Media</h3>
+      <ul class="flex gap-4">
+        <li><app-facebook class="contact-icon" /></li>
+        <li><app-twitter class="contact-icon" /></li>
+        <li><app-linkedin class="contact-icon" /></li>
+        <li><app-instagram class="contact-icon" /></li>
+      </ul>
+    </div>
+  </div>
+  <div class='copyright-container flex justify-center'>
+    <p>Backroads ©{{ year }}</p>
+  </div>
 </footer>
