@@ -13,8 +13,21 @@ footer {
 }
 
 footer>div>div {
-  width: 80%;
   text-align: left;
+}
+
+@media (width >= 640px) {
+  .footer-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (width >= 800px) {
+  .navigation,
+  .social-media {
+    padding-left: 2rem;
+  }
 }
 
 /* ---------- Icons ----------- */
