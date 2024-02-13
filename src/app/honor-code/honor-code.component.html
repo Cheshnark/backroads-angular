@@ -1,74 +1,19 @@
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p><p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
-<p>Honor Code Honor Code Honor Code Honor Code Honor Code Honor Code</p>
+<main>
+  <section class='front-container flex flex--col justify-center items-end'>
+      <div class="card-container">
+        <h2>Honor Code</h2>
+        <p>Check our traveler honor code. We may be wild and stuff, but we are not chaos marauders, there's honor in our way.</p>
+      </div>
+  </section>
+  <section class='code-container flex flex-col justify-center items-center'>
+    <div class='code-title'>
+      <h2>Think before you act</h2>
+      <p>No one wants to ride along an asshole, don't be someone you wouldn't like to ride along with. Vibe, chill, drink, smoke, raise hell, but don't be an asshole. Even helmet is more optional than being an asshole. Though maybe not wearing helmet is an alpha asshole movement too.</p>
+    </div>
+    <div class='honor-cards-container flex flex-col items-center gap-8'>
+      @for (card of honorCards; track $index) {
+        <app-honor-card [card]='card'/>
+      }
+    </div>
+  </section>
+</main>

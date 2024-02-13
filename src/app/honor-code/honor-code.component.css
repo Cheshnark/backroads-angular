@@ -1,0 +1,52 @@
+main {
+  background-color: #F9F4F6;
+}
+
+h2,
+p {
+  color: #161320;
+}
+
+/* ---------- Front Section ----------*/
+.front-container {
+  width: 100%;
+  min-height: 700px;
+  margin: 112px auto 0 auto;
+  padding-bottom: 1.5rem;
+
+
+  background-image: url('/assets/images/honor01.webp');
+  background-position: 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-container {
+  width: 90%;
+  margin: 0 auto 6rem auto;
+  padding: 1rem;
+
+  background-color: rgba(249, 244, 246, 0.80);
+  
+  text-align: center;
+
+  
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+/* ---------- Code container ----------*/
+.code-title {
+  width: 90%;
+  margin: 2rem auto 3rem auto;
+}
+
+.honor-cards-container {
+  margin-bottom: 5rem;
+}
