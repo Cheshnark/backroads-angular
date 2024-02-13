@@ -18,6 +18,6 @@ export class NavBarComponent {
     const body = document.querySelector('body')
     body?.classList.toggle('hide-scroll')
     
-    this.showMenu = !this.showMenu;
+    this.showMenu = true;
   };
 }
