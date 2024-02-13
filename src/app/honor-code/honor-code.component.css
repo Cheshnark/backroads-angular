@@ -23,6 +23,7 @@ p {
 
 .card-container {
   width: 90%;
+  max-width: 1300px;
   margin: 0 auto 6rem auto;
   padding: 1rem;
 
@@ -42,11 +43,17 @@ p {
 }
 
 /* ---------- Code container ----------*/
+.code-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 .code-title {
   width: 90%;
   margin: 2rem auto 3rem auto;
 }
 
 .honor-cards-container {
+  width: 95%;
   margin-bottom: 5rem;
 }
