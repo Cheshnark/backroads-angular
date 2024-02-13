@@ -1,0 +1,66 @@
+main {
+  background-color: #F9F4F6;
+}
+
+h2,
+p {
+  color: #161320;
+}
+
+/* ---------- Front Section ----------*/
+.front-container {
+  width: 100%;
+  min-height: 700px;
+  margin: 112px auto 0 auto;
+  padding-bottom: 1.5rem;
+
+
+  background-image: url('/assets/images/faq01.webp');
+  background-position: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (width >= 768px) {
+  .front-container {
+    background-position: 0;
+  }
+}
+
+.front-card-container {
+  width: 90%;
+  max-width: 1104px;
+  margin: 0 auto 6rem auto;
+  padding: 1rem;
+
+  background-color: rgba(249, 244, 246, 0.80);
+  
+  text-align: center;
+
+  
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+/* ---------- Code container ----------*/
+.faq-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.faq-cards-container {
+  width: 90%;
+  margin: 3rem auto 5rem auto;
+}
+
+@media (width >= 768px) {
+  .faq-cards-container {
+    width: 85%;
+  }
+}

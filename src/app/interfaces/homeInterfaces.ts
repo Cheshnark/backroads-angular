@@ -13,9 +13,3 @@ export interface Shelter {
   },
   
 }
-
-// Honor card interface
-export interface HonorCard {
-  title: string,
-  body: string
-}

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { HonorCard } from '../../interfaces/homeInterfaces';
+import { CardData } from '../../interfaces/homeInterfaces';
 
 @Component({
   selector: 'app-honor-card',
@@ -9,5 +9,5 @@ import { HonorCard } from '../../interfaces/homeInterfaces';
   styleUrl: './honor-card.component.css'
 })
 export class HonorCardComponent {
-  @Input() card:HonorCard | undefined;
+  @Input() card:CardData | undefined;
 }

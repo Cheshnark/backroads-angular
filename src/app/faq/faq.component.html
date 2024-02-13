@@ -1,1 +1,15 @@
-<p>faq works!</p>
+<main>
+  <section class='front-container flex justify-center items-end'>
+      <div class="front-card-container">
+        <h2>FAQ</h2>
+        <p>Yeah, I know that it's tempting to call or write us. Our customer service department is full of charming and nice people that are happy to help. Still, probably your question is answered here, take a look before contacting us, champ.</p>
+      </div>
+  </section>
+  <section class='faq-container flex flex-col justify-center items-center'>
+    <div class='faq-cards-container flex flex-col md:grid md:grid-cols-2 items-center md:items-start gap-8 md:gap-x-12'>
+      @for (card of faqCards; track $index) {
+        <app-faq-card [card]='card'/>
+      }
+    </div>
+  </section>
+</main>
