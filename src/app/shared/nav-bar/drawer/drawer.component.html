@@ -6,7 +6,7 @@
       <li (click)='onClickX()'><a [routerLink]="['/map']">Map</a></li>
       <li (click)='onClickX()'><a [routerLink]="['/honor-code']">Honor Code</a></li>
       <li (click)='onClickX()'><a [routerLink]="['/faq']">FAQ</a></li>
-      @if (user) {
+      @if (user$ | async) {
         <li (click)='onClickX()'><a [routerLink]="['/profile']">Profile</a></li>
       } @else {
         <li (click)='onClickX()'><a [routerLink]="['/login']">Login</a></li>

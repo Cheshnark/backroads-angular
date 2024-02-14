@@ -1,0 +1,8 @@
+<div>
+  <form action=''>
+    <h3>{{user$ | async}}</h3>
+    <input type='text' (change)='handleChangeName($event)' value={{name}}>
+  </form>
+  <button (click)='handleLogin()'>Login</button>
+  <button (click)='handleLogout()'>Logout</button>
+</div>

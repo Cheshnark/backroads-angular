@@ -5,17 +5,18 @@
     <li><a [routerLink]="['/map']">Map</a></li>
     <li><a [routerLink]="['/honor-code']">Honor Code</a></li>
     <li><a [routerLink]="['/faq']">FAQ</a></li>
-    @if (user) {
+    @if (user$ | async) {
       <li><a [routerLink]="['/profile']">Profile</a></li>
     } @else {
       <li><a [routerLink]="['/login']">Login</a></li>
     }
+    <li>{{user$ | async}}</li>
   </ul>
   @if (showMenu) {
     <app-drawer
       [showMenu]='showMenu'
       (showMenuChange)="showMenu = $event" [showMenu]="showMenu"
-      [user]='user'
     />
   }
 </nav>
+?.pipe
