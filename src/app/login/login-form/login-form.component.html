@@ -3,6 +3,6 @@
     <h3>{{user$ | async}}</h3>
     <input type='text' (change)='handleChangeName($event)' value={{name}}>
   </form>
-  <button (click)='handleLogin()'>Login</button>
-  <button (click)='handleLogout()'>Logout</button>
+  <button (click)='handleLogin()' class='login'>Login</button>
+  <button (click)='handleLogout()' class='logout'>Logout</button>
 </div>

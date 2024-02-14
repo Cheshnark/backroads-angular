@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LoginFormComponent } from './login-form.component';
+import { StoreModule } from '@ngrx/store';
+import { By } from '@angular/platform-browser';
 
 describe('LoginFormComponent', () => {
   let component: LoginFormComponent;
@@ -8,7 +10,7 @@ describe('LoginFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LoginFormComponent]
+      imports: [LoginFormComponent, StoreModule, StoreModule.forRoot({})]
     })
     .compileComponents();
     
@@ -20,4 +22,13 @@ describe('LoginFormComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should change name variable', () => {
+    fixture.detectChanges();
+    const input = fixture.debugElement.query(By.css('input'));
+
+    input.triggerEventHandler('change', event?.target.value)
+
+    expect(component.name).toBe('Jambo')
+  })
 });

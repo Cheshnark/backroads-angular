@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { DrawerComponent } from './drawer.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { By } from '@angular/platform-browser';
+import { StoreModule } from '@ngrx/store';
 
 describe('DrawerComponent', () => {
   let component: DrawerComponent;
@@ -10,7 +11,7 @@ describe('DrawerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DrawerComponent, RouterTestingModule]
+      imports: [DrawerComponent, RouterTestingModule, StoreModule.forRoot({})]
     })
     .compileComponents();
     
