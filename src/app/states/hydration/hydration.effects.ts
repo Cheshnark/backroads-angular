@@ -2,15 +2,34 @@
 import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType, OnInitEffects } from "@ngrx/effects";
 import { Action, Store } from "@ngrx/store";
-import { distinctUntilChanged, map, switchMap, tap } from "rxjs/operators";
+import { distinctUntilChanged, exhaustMap, map, switchMap, tap } from "rxjs/operators";
 import { AppState } from "../../interfaces/stateInterfaces";
 import * as HydrationActions from "./hydration.actions";
+import { login } from '../user/user.action';
 
 @Injectable()
 export class HydrationEffects implements OnInitEffects {
-  hydrate$ = createEffect(() =>
+  // hydrate$ = createEffect(() =>
+  //   this.action$.pipe(
+  //     ofType(HydrationActions.hydrate),
+  //     map(() => {
+  //       const storageValue = localStorage.getItem("state");
+  //       if (storageValue) {
+  //         try {
+  //           const state = JSON.parse(storageValue);
+  //           return HydrationActions.hydrateSuccess({ state });
+  //         } catch {
+  //           localStorage.removeItem("state");
+  //         }
+  //       }
+  //       return HydrationActions.hydrateFailure();
+  //     })
+  //   )
+  // );
+
+  login$ = createEffect(() =>
     this.action$.pipe(
-      ofType(HydrationActions.hydrate),
+      ofType(login),
       map(() => {
         const storageValue = localStorage.getItem("state");
         if (storageValue) {

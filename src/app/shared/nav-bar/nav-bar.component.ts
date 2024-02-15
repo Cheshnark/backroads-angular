@@ -7,6 +7,8 @@ import { Store } from '@ngrx/store';
 import { AppState } from '../../interfaces/stateInterfaces';
 import { selectUser } from '../../states/user/user.selector';
 import { AsyncPipe } from '@angular/common';
+import { EffectsModule } from '@ngrx/effects';
+import { HydrationEffects } from '../../states/hydration/hydration.effects';
 
 @Component({
   selector: 'app-nav-bar',

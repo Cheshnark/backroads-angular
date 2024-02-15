@@ -27,7 +27,7 @@ describe('LoginFormComponent', () => {
     fixture.detectChanges();
     const input = fixture.debugElement.query(By.css('input'));
 
-    input.triggerEventHandler('change', event?.target.value)
+    input.triggerEventHandler('change', null)
 
     expect(component.name).toBe('Jambo')
   })
