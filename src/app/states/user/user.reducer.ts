@@ -10,5 +10,5 @@ export const userReducer = createReducer(
   initialUserState,
   on(login, (state, {username}) => ({...state, username: username})),
   on(register, (state, {username}) => ({...state, user: username})),
-  on(logout, state => ({...state, user: null}))
+  on(logout, state => ({...state, username: null}))
 );
