@@ -1,6 +1,6 @@
 // User interface
 export interface UserState {
-  user: string | null
+  username: string | null
 };
 
 export interface AppState {

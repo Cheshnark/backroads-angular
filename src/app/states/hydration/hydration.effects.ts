@@ -30,7 +30,12 @@ export class HydrationEffects implements OnInitEffects {
   constructor(private action$: Actions, private store: Store<AppState>) {}
 
   ngrxOnInitEffects(): Action {
-    return HydrationActions.hydrate();
+    const storageItem:any = localStorage.getItem('user');
+    let username: string | null = null
+    const userObject = JSON.parse(storageItem)
+    username = userObject.user.username
+
+    return login({username: username});
   }
 
   serialize$ = createEffect(
@@ -39,7 +44,7 @@ export class HydrationEffects implements OnInitEffects {
         ofType(HydrationActions.hydrateSuccess, HydrationActions.hydrateFailure),
         switchMap(() => this.store),
         distinctUntilChanged(),
-        tap((state) => localStorage.setItem("state", JSON.stringify(state)))
+        tap((state) => localStorage.setItem("user", JSON.stringify(state)))
       ),
     { dispatch: false }
   );
