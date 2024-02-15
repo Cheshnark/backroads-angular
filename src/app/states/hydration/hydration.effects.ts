@@ -9,24 +9,6 @@ import { login } from '../user/user.action';
 
 @Injectable()
 export class HydrationEffects implements OnInitEffects {
-  // hydrate$ = createEffect(() =>
-  //   this.action$.pipe(
-  //     ofType(HydrationActions.hydrate),
-  //     map(() => {
-  //       const storageValue = localStorage.getItem("state");
-  //       if (storageValue) {
-  //         try {
-  //           const state = JSON.parse(storageValue);
-  //           return HydrationActions.hydrateSuccess({ state });
-  //         } catch {
-  //           localStorage.removeItem("state");
-  //         }
-  //       }
-  //       return HydrationActions.hydrateFailure();
-  //     })
-  //   )
-  // );
-
   login$ = createEffect(() =>
     this.action$.pipe(
       ofType(login),
